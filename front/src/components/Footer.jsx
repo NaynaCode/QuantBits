@@ -20,7 +20,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="footer-section">
+          {/*<div className="footer-section">
             <h4>Quick Links</h4>
             <ul>
               <li><a href="#privacy">Privacy Policy</a></li>
@@ -28,19 +28,22 @@ export default function Footer() {
               <li><a href="#disclaimer">Disclaimer</a></li>
               <li><a href="#sitemap">Sitemap</a></li>
             </ul>
-          </div>
+          </div>*/}
 
-          <div className="footer-section">
-            <h4>Follow Me</h4>
-            <div className="social-links">
-              <a href="https://github.com/NaynaCode" target="_blank" rel="noopener noreferrer">
-                <FaGithub size={28} />
+         <div className="footer-section">
+            <div className="follow-me-wrapper">
+                <h4>Follow Me</h4>
+                <div className="social-links">
+                <a href="https://github.com/NaynaCode" target="_blank" rel="noopener noreferrer">
+                    <FaGithub size={28} />
                 </a>
                 <a href="https://linkedin.com/in/nadja-markicevic" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={28} />
+                    <FaLinkedin size={28} />
                 </a>
+                </div>
             </div>
-          </div>
+         </div>
+
 
           <div className="footer-section">
             <h4>Contact</h4>

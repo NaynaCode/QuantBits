@@ -1,1 +1,1 @@
-# QuantLab
+# QuantBits

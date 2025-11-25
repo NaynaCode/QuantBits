@@ -1,0 +1,106 @@
+/* Chart Container */
+.chart-container {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.chart-container:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.chart-container--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #999;
+  font-size: 1rem;
+  padding: 40px 20px;
+}
+
+/* Chart Title */
+.chart-title {
+  margin: 0 0 20px 0;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #667eea;
+}
+
+/* Chart Wrapper */
+.chart-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+/* Recharts Customization */
+.chart-wrapper .recharts-surface {
+  overflow: visible !important;
+}
+
+.chart-wrapper .recharts-default-tooltip {
+  background: white !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  padding: 12px !important;
+}
+
+.chart-wrapper .recharts-tooltip-label {
+  color: #333 !important;
+  font-weight: 600 !important;
+  margin-bottom: 6px !important;
+}
+
+.chart-wrapper .recharts-tooltip-item {
+  color: #666 !important;
+}
+
+.chart-wrapper .recharts-legend-wrapper {
+  margin-top: 15px !important;
+}
+
+.chart-wrapper .recharts-legend-item-text {
+  color: #666 !important;
+  font-size: 0.9rem !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .chart-container {
+    padding: 15px;
+  }
+
+  .chart-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chart-container {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .chart-title {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .chart-wrapper {
+    overflow-x: scroll;
+  }
+
+  /* Ensure charts fit on small screens */
+  .chart-wrapper > div {
+    min-width: 100%;
+  }
+}
